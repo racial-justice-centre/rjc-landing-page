@@ -1,12 +1,12 @@
 export const siteDetails = {
-    siteName: 'Finwise',
-    siteUrl: 'https://finwise-omega.vercel.app/',
+    siteName: 'Racial Justice Centre',
+    siteUrl: 'http://localhost:3000/',
     metadata: {
-        title: 'Finwise - Next.js and Tailwind CSS Landing Page Template',
-        description: 'Finwise empowers businesses with cutting-edge technology solutions to drive success and efficiency.',
+        title: 'Racial Justice Centre',
+        description: 'Racial Justice Centre is a non-profit organisation that provides legal assistance to individuals and communities affected by racial discrimination.',
     },
     language: 'en-us',
     locale: 'en-US',
-    siteLogo: `${process.env.BASE_PATH || ''}/images/logo.png`, // or use a string for the logo e.g. "TechStartup"
-    googleAnalyticsId: '', // e.g. G-XXXXXXX,
+    siteLogo: `${process.env.BASE_PATH || ''}/images/rjc_icon.png`, // or use a string for the logo e.g. "TechStartup"
+    googleAnalyticsId: 'G-TH483DXH14', // e.g. G-XXXXXXX,
 }
