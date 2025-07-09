@@ -72,7 +72,7 @@ const socialPostData = [
         badge: "21 Mar 2025",
     },
     {
-        title: "New federal & NSW heat laws",
+        title: "New federal & NSW hate laws",
         description: "New hate crime laws are now in effect across Australia. The Criminal Code Amendment (Hate Crimes) Act 2025 (Cth) and new NSW legislation introduce tougher penalties for hate-fueled actions.",
         image: "/images/media/social5.png",
         link: "https://www.instagram.com/p/DG-EDBQzXRL/?igsh=MjZwejB1NTRzajQw",

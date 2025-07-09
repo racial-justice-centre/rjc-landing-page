@@ -8,7 +8,7 @@ const ContactList: React.FC = () => {
             Legal Enquiries
           </h2>
           <p className="text-[#35075B] leading-relaxed">
-          We are currently at capacity assisting many current clients. We are volunteer powered and are yet to be funded. Should you require legal help, we are happy to assist with connecting you to our referral partners. 
+          We are currently at capacity assisting many current clients. We are volunteer powered and are yet to be funded. Should you require legal help, we are happy to assist in connecting you to our referral partners. 
           </p>
         </div>
 
@@ -35,7 +35,7 @@ const ContactList: React.FC = () => {
             Other Enquiries
           </h2>
           <p className="text-[#35075B] leading-relaxed">
-          Would you like to partner with us? Please reach out with any collaborations pitches.
+          Would you like to partner with us? Please reach out with any collaboration pitches.
           </p>
         </div>
 

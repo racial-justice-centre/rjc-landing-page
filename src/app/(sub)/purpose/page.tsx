@@ -85,8 +85,7 @@ const MediaPage: React.FC = () => {
             {/* Values Card */}
             <div className="w-full bg-white min-h-[20rem] flex flex-col lg:flex-row justify-between">
               <div className="w-full lg:w-[30%] h-48 lg:h-auto bg-[url('/images/sub-hero.png')] bg-cover bg-right flex flex-col justify-center items-center">
-                <div className="border-4 border-white w-[90%] h-[90%] flex justify-center items-center">
-                </div>
+                <div className="border-4 border-white w-[90%] h-[90%] flex justify-center items-center"></div>
               </div>
               <div className="w-full lg:w-[70%] flex flex-col justify-start items-start p-6 sm:p-8 lg:p-16 space-y-3 sm:space-y-4 lg:space-y-6">
                 <h3 className="text-lg sm:text-xl lg:text-2xl text-[#35075B] font-semibold uppercase">
@@ -107,11 +106,13 @@ const MediaPage: React.FC = () => {
                     </p>
                   </li>
                   <li>
-                    <h2 className="text-lg sm:text-xl lg:text-2xl text-[#35075B] font-bold leading-relaxed lg:leading-loose">Education & Awareness</h2>
+                    <h2 className="text-lg sm:text-xl lg:text-2xl text-[#35075B] font-bold leading-relaxed lg:leading-loose">
+                      Education & Awareness
+                    </h2>
                     <p className="text-[#35075B] text-sm sm:text-base lg:text-2xl font-normal leading-relaxed lg:leading-loose">
-                      We are committed to addressing the root causes of racial
-                      inequality and to building systems that are fair and just
-                      for all communities.
+                      We see education as a vital tool for making the invisible
+                      actually visible and dismantling prejudice, transforming
+                      systems, and promoting long-term change.
                     </p>
                   </li>
                 </ul>

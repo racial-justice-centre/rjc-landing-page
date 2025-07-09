@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
                 href="/events"
                 className="block text-gray-600 hover:text-purple-600 transition-colors"
               >
-                Event & Education
+                Events & Education
               </Link>
               <Link
                 href="/media"
