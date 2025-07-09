@@ -21,7 +21,7 @@ const Header: React.FC = () => {
                 <nav className="w-full shadow-md bg-white flex items-center py-3 px-4 md:py-10 md:px-2">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 flex-shrink-0 lg:ml-10 pr-4 md:pr-2">
-                        <Image src="/images/icons/rjc_icon.png" alt="Racial Justice Centre" width={100} height={100} />
+                        <Image priority={false} src="/images/icons/rjc_icon.png" alt="Racial Justice Centre" width={100} height={100}/>
                     </Link>
 
                     {/* Desktop Menu - Centered */}

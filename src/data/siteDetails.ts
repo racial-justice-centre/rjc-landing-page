@@ -1,6 +1,6 @@
 export const siteDetails = {
     siteName: 'Racial Justice Centre',
-    siteUrl: 'http://localhost:3000/',
+    siteUrl: 'https://rjc-landing-page.vercel.app/',
     metadata: {
         title: 'Racial Justice Centre',
         description: 'Racial Justice Centre is a non-profit organisation that provides legal assistance to individuals and communities affected by racial discrimination.',

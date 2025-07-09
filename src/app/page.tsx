@@ -6,6 +6,8 @@ import Donation from "@/components/Donation";
 import Sudoku from "@/components/Sudoku";
 
 const HomePage: React.FC = () => {
+  
+
   return (
     <>
       <Hero />

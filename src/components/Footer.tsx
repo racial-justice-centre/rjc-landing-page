@@ -13,10 +13,12 @@ const Footer: React.FC = () => {
           {/* Left Column - Logo and Contact Info */}
           <div className="space-y-6">
             <Image
+              priority={false}
               src="/images/icons/rjc_icon.png"
               alt="Racial Justice Centre"
               width={100}
               height={100}
+              className="w-full h-auto"
             />
 
             <div className="space-y-4">
