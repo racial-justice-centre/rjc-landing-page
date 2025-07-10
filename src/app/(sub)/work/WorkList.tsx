@@ -16,7 +16,7 @@ const WorkList: React.FC = () => {
               Review of NSW Anti-Discrimination Law
             </p>
             <Image
-              src="/images/work/review_of_nsw_anti_discrimination_law.png"
+              src="/images/work/review_for_anti_discrimination_laws.png"
               alt="Review of NSW Anti-Discrimination Law"
               width={1000}
               height={1000}
