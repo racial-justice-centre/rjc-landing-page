@@ -22,7 +22,7 @@ const WorkList: React.FC = () => {
               height={1000}
               className="w-full max-w-2xl lg:max-w-4xl"
             />
-            <ReadMoreButton href="files/pad63.pdf" text="Read more" icon={<ChevronsRight className="w-4 h-4" />} />
+            <ReadMoreButton href="files/PAD63.pdf" text="Read more" icon={<ChevronsRight className="w-4 h-4" />} />
           </div>
         </div>
       </div>
