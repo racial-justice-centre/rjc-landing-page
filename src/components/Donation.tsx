@@ -24,10 +24,6 @@ const Donation: React.FC = () => {
 
       <div className="flex-1 w-full sm:h-[750px] md:h-[750px] lg:h-[600px] flex flex-col justify-center">
         <RaiselyForm />
-        <p className="self-center w-[80%] text-white text-center text-sm sm:text-base md:text-lg lg:text-xl font-bold sm:my-2 md:mt-8 lg:mt-10 leading-tight max-w-md lg:max-w-none">
-          We are a Deductible Gift Recipient. All donations over $2 are tax
-          deductible.
-        </p>
       </div>
     </section>
   );
