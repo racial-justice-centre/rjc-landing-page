@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         <div className="w-full relative z-1 filter brightness-40">
           <video
             className="w-full h-auto rjc-landing-heading-hero-video"
-            src="https://racialjustice.au/wp-content/uploads/2025/06/Conference.mp4"
+            src="video/Conference.mp4"
             autoPlay
             muted
             loop
