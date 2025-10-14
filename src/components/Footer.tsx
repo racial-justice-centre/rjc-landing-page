@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
 
             <div className="flex space-x-3">
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/racial-justice-centre"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-blue-600 hover:bg-blue-700 text-white rounded flex items-center justify-center transition-colors"
@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
               </Link>
 
               <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/racialjustice.au/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded flex items-center justify-center transition-colors"
