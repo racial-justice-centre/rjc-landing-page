@@ -5,10 +5,6 @@ interface GalleryPhoto {
 
 const CONFERENCE_PHOTOS: GalleryPhoto[] = [
     {
-        id:2,
-        image:"/images/events/conference/conference_2.png"
-    },
-    {
         id:3,
         image:"/images/events/conference/conference_3.png"
     },
