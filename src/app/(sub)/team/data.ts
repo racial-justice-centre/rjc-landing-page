@@ -66,7 +66,7 @@ const VOLUNTEERS: TeamMemberProps[] = [
     },
     {
         name: "Elvina Yew",
-        role: "Communications and Projects Lead",
+        role: "Marketing Manager",
         image: "/images/teams/volunteers/elvina.png",
     },
     {
@@ -110,9 +110,9 @@ const VOLUNTEERS: TeamMemberProps[] = [
         image: "/images/teams/volunteers/elliot.png",
     },
     {
-        name: "Ethan Choy",
+        name: "Isabella Giovinazzo",
         role: "Paralegal",
-        image: "/images/teams/volunteers/ethan_choy.png",
+        image: "/images/teams/volunteers/isabella.png",
     },
     {
         name: "Viraaj Rattan",

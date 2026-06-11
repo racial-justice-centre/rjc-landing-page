@@ -16,7 +16,7 @@ const MediaPage: React.FC = () => {
         <div className="space-y-16">
           <div className="space-y-4 flex flex-col items-center">
             <h2 className="w-[60%] text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#6D2102] pb-4 sm:pb-6 md:pb-8 lg:pb-10">
-            Our Patrons, Governing Board And Advisors
+            Our Patrons, Governing Board and Advisors
             </h2>
             <div className="w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] border-b-2 sm:border-b-3 md:border-b-4 border-[#FD9D3D]"></div>
           </div>
@@ -32,7 +32,7 @@ const MediaPage: React.FC = () => {
         <div className="space-y-16 max-w-6xl mx-auto">
           <div className="space-y-4 flex flex-col items-center">
             <h2 className="w-[60%] text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#6D2102] pb-4 sm:pb-6 md:pb-8 lg:pb-10">
-            Pro Bono & Part-Time Team
+            Pro Bono & Part-time Team
             </h2>
             <div className="w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] border-b-2 sm:border-b-3 md:border-b-4 border-[#FD9D3D]"></div>
           </div>
