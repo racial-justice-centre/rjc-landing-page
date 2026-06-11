@@ -51,10 +51,9 @@ const ADVISORY_BOARD: TeamMemberProps[] = [
         description: "Simon is a Professor of Law at Sydney University, a Lawyer, Kim Santow Chair of Law and Social Justice, a Consultant, Author and a Discrimination Law Expert. Simon has been a consultant to the NSW Law Reform Commission, a judicial member of the NSW ADT and a legal adviser to the Federal Parliamentary Joint Committee on Human Rights."
     },
     {
-        name: "Sisonke Msimang",
-        role: "Advisory Committee",
-        image: "/images/teams/msimang.png",
-        description: "Sisonke Msimang is an acclaimed writer, storyteller and political analyst whose work explores race, gender and democracy. She is the author of Always Another Country and The Resurrection of Winnie Mandela, and writes Ms Understanding, a column on race and racism for The Guardian. Sisonke leads storytelling programs at the Centre for Stories and provides bespoke training for leaders. She has also held senior roles with the United Nations and Open Society Foundations."
+        name: "Sharfah Mohamed",
+        role: "Principal Lawyer",
+        image: "/images/teams/volunteers/sharfah.png",
     },
 ]
 
