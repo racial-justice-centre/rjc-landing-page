@@ -135,7 +135,7 @@ const Footer: React.FC = () => {
         {/* Bottom Copyright */}
         <div className="mt-12 pt-8 text-center">
           <p className="text-gray-500 text-sm">
-            © 2024 Racial Justice Centre ABN: 62 659 851 699
+            © 2026 Racial Justice Centre ABN: 62 659 851 699
           </p>
         </div>
       </div>
