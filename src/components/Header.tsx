@@ -15,6 +15,26 @@ const Header: React.FC = () => {
         setIsOpen(!isOpen);
     };
 
+    const scrollToDonation = (event: React.MouseEvent<HTMLAnchorElement>, closeMenu = false) => {
+        if (closeMenu) {
+            setIsOpen(false);
+        }
+
+        if (window.location.pathname !== '/') {
+            return;
+        }
+
+        const donationSection = document.getElementById('cta');
+
+        if (!donationSection) {
+            return;
+        }
+
+        event.preventDefault();
+        window.history.pushState(null, '', '/#cta');
+        donationSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+
     return (
         <header className="fixed bg-transparent top-0 left-0 right-0 z-50 mx-auto w-full">
             <div className="w-full">
@@ -37,7 +57,7 @@ const Header: React.FC = () => {
 
                     {/* Desktop CTA Button */}
                     <div className="hidden md:block flex-shrink-0 mr-2 lg:mr-5">
-                        <Link href="/#cta" className="font-semibold text-white bg-black hover:bg-primary-accent px-4 md:px-6 lg:px-8 py-2 md:py-2.5 lg:py-3 transition-colors flex items-center gap-2 text-sm md:text-base whitespace-nowrap">
+                        <Link href="/#cta" onClick={scrollToDonation} className="font-semibold text-white bg-black hover:bg-primary-accent px-4 md:px-6 lg:px-8 py-2 md:py-2.5 lg:py-3 transition-colors flex items-center gap-2 text-sm md:text-base whitespace-nowrap">
                             Donate <IoArrowForward className="w-3 h-3 md:w-4 md:h-4" />
                         </Link>
                     </div>
@@ -104,7 +124,7 @@ const Header: React.FC = () => {
                                 <Link 
                                     href="/#cta" 
                                     className="flex items-center justify-center gap-2 w-full px-4 py-3 text-base font-semibold text-white bg-black hover:bg-gray-800 rounded-lg transition-colors"
-                                    onClick={toggleMenu}
+                                    onClick={(event) => scrollToDonation(event, true)}
                                 >
                                     Donate <IoArrowForward className="w-4 h-4" />
                                 </Link>
