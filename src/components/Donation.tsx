@@ -16,14 +16,14 @@ const Donation: React.FC = () => {
           <h1 className="mt-10 text-[#3B0666] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center lg:text-left leading-tight">
             DONATIONS
           </h1>
-          <p className="text-[#CF7650] text-center lg:text-left text-base sm:text-lg md:text-xl font-bold mt-4 sm:my-6 md:mt-8 lg:mt-10 leading-tight max-w-md lg:max-w-none">
-            Your donations ensure everyone has equal access to justice.
-          </p>
         </div>
       </div>
 
       <div className="flex-1 w-full sm:h-[750px] md:h-[750px] lg:h-[600px] flex flex-col justify-center">
         <RaiselyForm />
+        <p className="self-center text-[#3B0666] text-center text-base sm:text-lg md:text-xl font-bold leading-tight max-w-md px-4 sm:px-8 mt-0 sm:mt-8 mb-4 sm:mb-0">
+          Your donations ensure everyone has equal access to justice.
+        </p>
       </div>
     </section>
   );
