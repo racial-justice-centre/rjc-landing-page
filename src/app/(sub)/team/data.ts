@@ -15,7 +15,7 @@ const ADVISORY_BOARD: TeamMemberProps[] = [
     },
     {
         name: "Reem Mussa",
-        role: "Advisory Committee",
+        role: "Strategic Advisor",
         image: "/images/teams/reem.png",
         description: "Reem is a Strategic Advisor and sessional academic in development and anthropology. Reem graduated with Honours from Melbourne University. Reem has her Master's degree in Migration and Intercultural Relations."
     },
@@ -40,19 +40,19 @@ const ADVISORY_BOARD: TeamMemberProps[] = [
     },
     {
         name: "Desmond Kennedy SC (Retired)",
-        role: "Chair Advisory Committee",
+        role: "Strategic Advisor",
         image: "/images/teams/ksc.png",
         description: "Desmond is a retired Senior Counsel, who practised extensively in racial and sexual discrimination, sexual harassment and bullying. Desmond has written and presented extensively in all these areas. He appeared as SC for Mr Naidu in the matter of Nationwide News Pty Ltd ats Naidu. The case resurrected for practical purposes the tort of 'intentional harm', with Mr Naidu being awarded damages of $2.05M."
     },
     {
         name: "Professor Simon Rice (Retired)",
-        role: "Advisory Committee",
+        role: "Strategic Advisor",
         image: "/images/teams/simon.png",
         description: "Simon is a Professor of Law at Sydney University, a Lawyer, Kim Santow Chair of Law and Social Justice, a Consultant, Author and a Discrimination Law Expert. Simon has been a consultant to the NSW Law Reform Commission, a judicial member of the NSW ADT and a legal adviser to the Federal Parliamentary Joint Committee on Human Rights."
     },
     {
         name: "Sharfah Mohamed",
-        role: "Principal Lawyer",
+        role: "Lawyer",
         image: "/images/teams/volunteers/sharfah.png",
     },
 ]
