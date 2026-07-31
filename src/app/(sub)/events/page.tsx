@@ -1,4 +1,6 @@
 import Image from "next/image";
+import SubpageHero from "@/components/SubpageHero";
+import { SubpageHeroProps } from "@/lib/type";
 import {
   Carousel,
   CarouselContent,
@@ -9,29 +11,17 @@ import {
 } from "@/components/events/events_carousel";
 import { CONFERENCE_PHOTOS, EVENT_2024, ROUNDTABLE_PHOTOS } from "./data";
 
+const subpageHeroProps: SubpageHeroProps = {
+  title: "Our Events",
+  subtitle:
+    "An Australia where all people are treated with dignity and respect, regardless of their race",
+};
+
 const EventPage: React.FC = () => {
   return (
-    <section>
-      <section
-        id="hero"
-        className="w-full relative overflow-hidden h-[350px] sm:h-[400px] md:h-[450px] lg:h-[550px] xl:h-[600px]"
-      >
-        <div className="w-full relative h-full">
-          <Image
-            className="w-full h-full object-cover object-right"
-            src="/images/events/conference_hero.png"
-            alt="Subpage Hero"
-            priority
-            fill
-          />
-        </div>
-        <div className="absolute inset-0 z-2 bg-[linear-gradient(0deg,rgba(122,122,122)_0%,rgba(102,102,102,0)_100%)]"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 z-3 text-center w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%] xl:w-[70%] px-4 sm:px-6 md:px-8">
-          <h1 className="text-white font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-2 sm:mb-3 md:mb-4">
-            Racial Justice Conference
-          </h1>
-        </div>
-      </section>
+    <>
+      <SubpageHero {...subpageHeroProps} />
+      <section>
       <div className="w-full">
         <div className="space-y-3 sm:space-y-4 flex flex-col items-center max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="w-full sm:w-[85%] md:w-[75%] lg:w-[70%] text-center text-2xl sm:text-3xl md:text-4xl font-bold text-[#35075B] border-b-2 sm:border-b-3 md:border-b-4 border-[#FD9D3D] py-4 sm:py-6 md:py-8 my-4 sm:my-6 md:my-8">
@@ -42,7 +32,7 @@ const EventPage: React.FC = () => {
             the NSW State Library. Many wonderful and intelligent guests gave
             powerful presentations, speeches and appeared on panels throughout
             the day. The event was an overwhelming success and left our guests
-            wanting more. We cannot wait to do it again in 2025.
+            wanting more.
           </p>
         </div>
         <div className="w-full mt-8 sm:mt-12 md:mt-16">
@@ -171,6 +161,7 @@ const EventPage: React.FC = () => {
         
       </div>
     </section>
+    </>
   );
 };
 

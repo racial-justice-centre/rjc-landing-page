@@ -7,6 +7,7 @@ import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
 import Image from 'next/image';
 import { menuItems } from '@/data/menuItems';
 import { IoArrowForward } from 'react-icons/io5';
+import ConferenceCountdown from '@/components/temp/ConferenceCountdown';
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -38,11 +39,14 @@ const Header: React.FC = () => {
     return (
         <header className="fixed bg-transparent top-0 left-0 right-0 z-50 mx-auto w-full">
             <div className="w-full">
-                <nav className="w-full shadow-md bg-white flex items-center py-3 px-4 md:py-10 md:px-2">
+                <nav className="w-full shadow-md bg-white flex items-center py-2 px-4 md:py-6 md:px-2">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 flex-shrink-0 lg:ml-10 pr-4 md:pr-2">
-                        <Image priority={false} src="/images/icons/rjc_icon.png" alt="Racial Justice Centre" width={100} height={100}/>
+                        <Image priority={false} src="/images/icons/rjc_icon.png" alt="Racial Justice Centre" width={100} height={100} className="h-10 w-auto md:h-12"/>
                     </Link>
+
+                    {/* Conference Countdown */}
+                    <ConferenceCountdown />
 
                     {/* Desktop Menu - Centered */}
                     <ul className="hidden md:flex lg:space-x-6 xl:space-x-12 md:space-x-4 sm:space-x-2 flex-1 justify-end mr-2 lg:mr-4 xl:mr-10">

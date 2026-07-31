@@ -4,12 +4,14 @@ import Partners from "@/components/Partners";
 import Signup from "@/components/Signup";
 import Donation from "@/components/Donation";
 import Sudoku from "@/components/Sudoku";
+import SaveTheDateModal from "@/components/temp/SaveTheDateModal";
 
 const HomePage: React.FC = () => {
   
 
   return (
     <>
+      <SaveTheDateModal />
       <Hero />
       <Container>
         <Sudoku />

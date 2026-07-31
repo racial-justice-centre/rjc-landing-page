@@ -1,6 +1,6 @@
 interface SubpageHeroProps {
     title: string;
-    subtitle: string;
+    subtitle?: string;
     image?: string;
 }
 

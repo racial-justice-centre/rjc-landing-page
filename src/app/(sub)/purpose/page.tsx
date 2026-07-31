@@ -6,7 +6,7 @@ import Image from "next/image";
 const subpageHeroProps: SubpageHeroProps = {
   title: "Our Purpose",
   subtitle:
-    "A world where all people can live, thrive and enjoy life, free from racism.",
+    "An Australia where all people are treated with dignity and respect, regardless of their race",
 };
 
 const MediaPage: React.FC = () => {
