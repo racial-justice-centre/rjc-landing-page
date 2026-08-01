@@ -23,9 +23,11 @@ const SubpageHero: React.FC<SubpageHeroProps> = (subpageHeroProps: SubpageHeroPr
         <h1 className="text-white font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-2 sm:mb-3 md:mb-4">
           {subpageHeroProps.title}
         </h1>
+        {subpageHeroProps.subtitle && (
         <h2 className="text-white font-normal text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl italic">
           {subpageHeroProps.subtitle}
         </h2>
+        )}
         </div>
       </section>
     </>

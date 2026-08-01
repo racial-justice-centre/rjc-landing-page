@@ -4,7 +4,7 @@ import WorkList from "./WorkList";
 
 const subpageHeroProps: SubpageHeroProps = {
   title: "Our Work",
-  subtitle: "A world where all people can live, thrive and enjoy life, free from racism.",
+  subtitle: "An Australia where all people are treated with dignity and respect, regardless of their race",
 }
 
 const WorkPage: React.FC = () => {
