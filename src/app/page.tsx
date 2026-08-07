@@ -3,18 +3,21 @@ import Container from "@/components/Container";
 import Partners from "@/components/Partners";
 import Signup from "@/components/Signup";
 import Donation from "@/components/Donation";
-import Sudoku from "@/components/Sudoku";
-import SaveTheDateModal from "@/components/temp/SaveTheDateModal";
+// Restore later: uncomment to bring the homepage Sudoku grid back
+// import Sudoku from "@/components/Sudoku";
+import ConferenceBookNowModal from "@/components/temp/ConferenceBookNowModal";
+import ConferenceEventDetails from "@/components/temp/ConferenceEventDetails";
 
 const HomePage: React.FC = () => {
   
 
   return (
     <>
-      <SaveTheDateModal />
+      <ConferenceBookNowModal />
       <Hero />
+      <ConferenceEventDetails />
       <Container>
-        <Sudoku />
+        {/* <Sudoku /> */}
 
         <Donation />
         <Signup />

@@ -9,10 +9,11 @@ export const menuItems: IMenuItem[] = [
         text: "Our Team",
         url: "/team"
     },
-    {
-        text: "Our Impact",
-        url: "/impact"
-    },
+    // Restore later: uncomment to bring Our Impact back in the nav
+    // {
+    //     text: "Our Impact",
+    //     url: "/impact"
+    // },
     {
         text: "Our Work",
         url: "/work"

@@ -1,3 +1,7 @@
+/**
+ * DISABLED — Our Impact page is temporarily hidden.
+ * Restore: rename this file back to `page.tsx` (and uncomment the nav/Sudoku entries).
+ */
 import Container from "@/components/Container";
 import SubpageHero from "@/components/SubpageHero";
 import { SubpageHeroProps } from "@/lib/type";

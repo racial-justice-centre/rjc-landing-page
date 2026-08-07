@@ -28,12 +28,13 @@ import EventCountdown from "@/components/EventCountdown";
 const ConferenceCountdown: React.FC = () => {
   return (
     <EventCountdown
-      eventName="Racial Justice Conference"
+      eventName="2026 Conference"
       targetDate="2026-09-03T00:00:00"
       endDate="2026-09-04T23:59:59"
       dateRangeLabel="Sep 3–4"
-      href="/events"
-      className="ml-3 flex-shrink-0 md:ml-6"
+      ctaLabel="Book now!"
+      href="https://www.zeffy.com/en-AU/ticketing/racial-justice-conference--2026"
+      className="flex-shrink-0 self-stretch justify-center shadow-none"
     />
   );
 };
