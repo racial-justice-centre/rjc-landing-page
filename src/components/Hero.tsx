@@ -4,33 +4,21 @@ import React from "react";
 import Link from "next/link";
 import { IoArrowDown } from "react-icons/io5";
 
+const TICKETING_URL =
+  "https://www.zeffy.com/en-AU/ticketing/racial-justice-conference--2026";
+
 const Hero: React.FC = () => {
-  const scrollToDonation = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    if (window.location.pathname !== "/") {
-      return;
-    }
-
-    const donationSection = document.getElementById("cta");
-
-    if (!donationSection) {
-      return;
-    }
-
-    event.preventDefault();
-    window.history.pushState(null, "", "/#cta");
-    donationSection.scrollIntoView({ behavior: "smooth", block: "center" });
-  };
-
   return (
     <>
       <section
         id="hero"
-        className="w-full relative overflow-hidden min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px] xl:min-h-[450px]"
+        className="relative w-full aspect-video overflow-hidden"
       >
-        <div className="w-full relative z-1 filter brightness-40">
+        <div className="absolute inset-0 z-1 filter brightness-40">
           <video
-            className="w-full h-auto rjc-landing-heading-hero-video"
+            className="h-full w-full object-cover rjc-landing-heading-hero-video"
             src="video/Conference.mp4"
+            preload="metadata"
             autoPlay
             muted
             loop
@@ -45,16 +33,17 @@ const Hero: React.FC = () => {
             style={{ color: "#ffffff" }}
             className="m-0 break-words font-black tracking-tight !text-white text-3xl leading-9 sm:text-4xl sm:leading-[2.75rem] md:text-5xl md:leading-[3.5rem] lg:text-6xl lg:leading-[4.25rem] xl:text-7xl xl:leading-[5.25rem] 2xl:text-8xl 2xl:leading-[6rem] drop-shadow-[0_2px_12px_rgba(0,0,0,0.75)]"
           >
-            THE RACIAL JUSTICE CENTRE
+            EARLY BIRD TICKETS OUT NOW!
           </h1>
           <Link
-            href="/#cta"
-            onClick={scrollToDonation}
-            className="mt-5 bg-[#35075B] px-7 py-3 text-base font-semibold text-white shadow-lg shadow-black/20 transition-colors hover:bg-[#4A0D75] sm:mt-6 sm:px-9 sm:py-3.5 sm:text-lg"
+            href={TICKETING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 bg-[#35075B] px-4 py-2 text-xs font-semibold text-white shadow-lg shadow-black/20 transition-colors hover:bg-[#4A0D75] sm:mt-5 sm:px-7 sm:py-3 sm:text-base md:mt-6 md:px-9 md:py-3.5 md:text-lg"
           >
-            Donate Today
+            Secure Your Ticket
           </Link>
-          <IoArrowDown className="mt-3 h-6 w-6 text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)] sm:mt-4" aria-hidden="true" />
+          <IoArrowDown className="mt-2 h-4 w-4 text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)] sm:mt-3 sm:h-6 sm:w-6 md:mt-4" aria-hidden="true" />
         </div>
       </section>
       <div className="max-w-7xl mx-auto flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24">

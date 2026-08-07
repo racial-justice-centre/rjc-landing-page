@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useCountdown } from "@/hooks/useCountdown";
+import { cn } from "@/lib/utils";
 
 export interface EventCountdownProps {
   /** Full event name, rendered as the first line of the card. */
@@ -12,6 +13,8 @@ export interface EventCountdownProps {
   endDate?: string;
   /** Human-readable date range shown next to the countdown, e.g. "Sep 3-4". */
   dateRangeLabel: string;
+  /** Optional CTA text shown instead of the days-remaining countdown (e.g. "Book now!"). */
+  ctaLabel?: string;
   /** Where the card should link to (e.g. an events page). */
   href: string;
   className?: string;
@@ -28,6 +31,7 @@ const EventCountdown: React.FC<EventCountdownProps> = ({
   targetDate,
   endDate,
   dateRangeLabel,
+  ctaLabel,
   href,
   className,
 }) => {
@@ -37,24 +41,30 @@ const EventCountdown: React.FC<EventCountdownProps> = ({
     return null;
   }
 
+  const isExternal = href.startsWith("http://") || href.startsWith("https://");
+
+  const secondaryLine = hasStarted
+    ? `Happening now · ${dateRangeLabel}`
+    : ctaLabel
+      ? `${ctaLabel} · ${dateRangeLabel}`
+      : `${daysRemaining} ${daysRemaining === 1 ? "day" : "days"} · ${dateRangeLabel}`;
+
   return (
     <Link
       href={href}
-      aria-label={`Countdown to ${eventName}`}
-      className={`flex flex-col items-start gap-1 rounded-none border-none bg-[#35075B] px-2.5 py-1.5 leading-tight text-white shadow-lg shadow-black/20 transition-colors hover:bg-[#4A0D75] md:px-3 md:py-2 ${className ?? ""}`}
+      {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+      aria-label={ctaLabel ? `${ctaLabel} — ${eventName}` : `Countdown to ${eventName}`}
+      className={cn(
+        "flex flex-col items-start justify-center gap-1 rounded-none border-none bg-[#35075B] px-2.5 py-1.5 leading-tight text-white shadow-lg shadow-black/20 transition-colors hover:bg-[#4A0D75] md:px-3 md:py-2",
+        className
+      )}
     >
       <span className="text-[10px] font-medium text-white md:text-xs lg:text-sm">
         {eventName}
       </span>
-      {hasStarted ? (
-        <span className="text-[10px] font-semibold uppercase tracking-wide text-white md:text-xs lg:text-sm">
-          Happening now &middot; {dateRangeLabel}
-        </span>
-      ) : (
-        <span className="text-[10px] font-semibold uppercase tracking-wide text-white md:text-xs lg:text-sm">
-          {daysRemaining} {daysRemaining === 1 ? "day" : "days"} &middot; {dateRangeLabel}
-        </span>
-      )}
+      <span className="text-[10px] font-semibold uppercase tracking-wide text-white md:text-xs lg:text-sm">
+        {secondaryLine}
+      </span>
     </Link>
   );
 };
