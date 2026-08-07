@@ -10,6 +10,7 @@ import {
   CarouselThumbnails,
 } from "@/components/events/events_carousel";
 import { CONFERENCE_PHOTOS, EVENT_2024, ROUNDTABLE_PHOTOS } from "./data";
+import ConferenceEventDetails from "@/components/temp/ConferenceEventDetails";
 
 const subpageHeroProps: SubpageHeroProps = {
   title: "Our Events",
@@ -21,6 +22,7 @@ const EventPage: React.FC = () => {
   return (
     <>
       <SubpageHero {...subpageHeroProps} />
+      <ConferenceEventDetails />
       <section>
       <div className="w-full">
         <div className="space-y-3 sm:space-y-4 flex flex-col items-center max-w-6xl mx-auto px-4 sm:px-6">
@@ -68,7 +70,7 @@ const EventPage: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-full bg-[#D9F3DD] mt-16 sm:mt-20 md:mt-24 lg:mt-32 pt-8 sm:pt-12 md:pt-16 pb-16 sm:pb-20 md:pb-24 lg:pb-32">
+      <div className="w-full bg-[#D9F3DD] pt-8 sm:pt-12 md:pt-16 pb-16 sm:pb-20 md:pb-24 lg:pb-32">
         <div className="space-y-3 sm:space-y-4 flex flex-col items-center max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="w-full sm:w-[85%] md:w-[75%] lg:w-[70%] text-center text-2xl sm:text-3xl md:text-4xl font-bold text-[#35075B] border-b-2 sm:border-b-3 md:border-b-4 border-[#FD9D3D] py-4 sm:py-6 md:py-8 my-4 sm:my-6 md:my-8">
             Racial Justice Roundtable

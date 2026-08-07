@@ -9,13 +9,14 @@ const GRIDS_PROPS: SudokuGridProps[] = [
     title: "Purpose",
     link: "/purpose",
   },
-  {
-    background_color: "#CF7650",
-    title: "Impact",
-    link: "/impact",
-    icon: "/images/rjc_icon.png",
-    additional_class: "flex items-center justify-center flex-col  lg:justify-start gap-8",
-  },
+  // Restore later: uncomment to bring Impact back in the homepage grid
+  // {
+  //   background_color: "#CF7650",
+  //   title: "Impact",
+  //   link: "/impact",
+  //   icon: "/images/rjc_icon.png",
+  //   additional_class: "flex items-center justify-center flex-col  lg:justify-start gap-8",
+  // },
   {
     background_img: "/images/sudoku/3.png",
     title: "Media",

@@ -6,7 +6,7 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#E4E3DB] pt-16 pb-10 px-4">
+    <footer className="bg-[#E4E3DB] pt-16 pb-6 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Left Column - Contact Info */}
@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Copyright */}
-        <div className="mt-8 pt-4 text-center">
+        <div className="mt-4 pt-2 text-center">
           <p className="text-gray-500 text-sm">
             © 2026 Racial Justice Centre ABN: 62 659 851 699
           </p>
