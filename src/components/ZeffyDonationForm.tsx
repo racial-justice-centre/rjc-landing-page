@@ -67,7 +67,6 @@ const ZeffyDonationForm: React.FC = () => {
             }}
             data-zeffy-embed-src={ZEFFY_EMBED_SRC}
             allow="payment"
-            allowtransparency="true"
           />
         </div>
       </div>
