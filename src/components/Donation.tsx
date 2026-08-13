@@ -1,14 +1,14 @@
 import React from "react";
-import RaiselyForm from "./RaiselyForm";
+import ZeffyDonationForm from "./ZeffyDonationForm";
 
 const Donation: React.FC = () => {
 
   return (
     <section
       id="cta"
-      className="bg-[#dd9f85] mb-20 md:mb-32 lg:mb-40 flex flex-col lg:flex-row items-center rounded-2xl md:rounded-3xl mx-4 sm:mx-6 lg:mx-auto max-w-7xl mt-40"
+      className="bg-[#dd9f85] mb-20 md:mb-32 lg:mb-40 flex flex-col lg:flex-row items-stretch rounded-2xl md:rounded-3xl mx-4 sm:mx-6 lg:mx-auto max-w-7xl mt-40"
     >
-      <div className="flex flex-col items-center justify-start flex-1 bg-[url('/images/donate/rona.png')] bg-cover bg-center lg:bg-top rounded-t-2xl md:rounded-t-3xl lg:rounded-l-3xl lg:rounded-tr-none h-[550px] sm:h-[600px] md:h-[650px] lg:h-[600px] w-full relative">
+      <div className="flex flex-col items-center justify-start flex-1 bg-[url('/images/donate/rona.png')] bg-cover bg-center lg:bg-top rounded-t-2xl md:rounded-t-3xl lg:rounded-l-3xl lg:rounded-tr-none h-[550px] sm:h-[600px] md:h-[650px] lg:h-auto lg:min-h-[600px] w-full relative">
         {/* Overlay for better text readability on mobile */}
         <div className="absolute inset-0 bg-black/10 rounded-t-2xl md:rounded-t-3xl lg:rounded-l-3xl lg:rounded-tr-none"></div>
 
@@ -19,9 +19,9 @@ const Donation: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex-1 w-full sm:h-[750px] md:h-[750px] lg:h-[600px] flex flex-col justify-center">
-        <RaiselyForm />
-        <p className="self-center text-[#3B0666] text-center text-base sm:text-lg md:text-xl font-bold leading-tight max-w-md px-4 sm:px-8 mt-0 sm:mt-8 mb-4 sm:mb-0">
+      <div className="flex-1 w-full flex flex-col justify-start">
+        <ZeffyDonationForm />
+        <p className="self-center text-[#3B0666] text-center text-base sm:text-lg md:text-xl font-bold leading-tight max-w-md px-4 sm:px-8 mt-2 sm:mt-4 mb-6 sm:mb-8">
           Your donations ensure everyone has equal access to justice.
         </p>
       </div>
