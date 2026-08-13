@@ -26,7 +26,6 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Great_Vibes } from "next/font/google";
 import { Calendar, Clock, MapPin } from "lucide-react";
 import {
   Dialog,
@@ -34,11 +33,6 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
-
-const greatVibes = Great_Vibes({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 const SCROLL_THRESHOLD = 50;
 const SESSION_KEY = "rjc-book-now-shown";
@@ -69,7 +63,7 @@ const ConferenceBookNowModal: React.FC = () => {
         <div className="flex flex-col border-2 border-[#35075B] px-5 py-8 sm:px-8 sm:py-10">
           <div className="flex flex-col items-center text-center">
             <p
-              className={`${greatVibes.className} mb-8 text-5xl leading-tight text-[#dd9f85] sm:mb-10 sm:text-6xl`}
+              className="mb-8 text-5xl leading-tight text-[#dd9f85] sm:mb-10 sm:text-6xl"
             >
               You&apos;re Invited
             </p>
@@ -103,9 +97,8 @@ const ConferenceBookNowModal: React.FC = () => {
           </div>
 
           <DialogDescription className="mx-auto mt-6 max-w-sm text-center text-sm leading-relaxed text-gray-600 sm:mt-8 sm:text-base">
-            Join us for a gathering dedicated to advancing racial justice,
-            building community power, and driving actionable anti-racism
-            strategies.
+            Buy your ticket now and join us in advancing racial justice,
+            building community power, and driving change.
           </DialogDescription>
 
           <div className="mt-6 flex justify-center sm:mt-8">
