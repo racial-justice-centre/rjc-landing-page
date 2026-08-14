@@ -112,6 +112,9 @@ const ConferenceBookNowModal: React.FC = () => {
               Secure Your Ticket
             </Link>
           </div>
+          <p className="mt-3 text-center text-xs text-gray-500">
+            Early bird tickets end Monday 17 September 2026
+          </p>
         </div>
       </DialogContent>
     </Dialog>

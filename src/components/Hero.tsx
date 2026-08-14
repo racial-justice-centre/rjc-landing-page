@@ -35,6 +35,9 @@ const Hero: React.FC = () => {
           >
             EARLY BIRD TICKETS OUT NOW!
           </h1>
+          <p className="mt-2 text-xs font-semibold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)] sm:mt-3 sm:text-sm md:text-base">
+            Offer ends Monday 17 September 2026
+          </p>
           <Link
             href={TICKETING_URL}
             target="_blank"

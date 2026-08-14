@@ -97,7 +97,7 @@ const ConferenceEventDetails: React.FC = () => {
               </ul>
             </div>
 
-            <div className="flex justify-center pt-2 sm:pt-4">
+            <div className="flex flex-col items-center gap-2 pt-2 sm:pt-4">
               <Link
                 href={TICKETING_URL}
                 target="_blank"
@@ -106,6 +106,9 @@ const ConferenceEventDetails: React.FC = () => {
               >
                 Secure Your Ticket
               </Link>
+              <p className="text-sm text-[#3B0666]">
+                Early bird tickets end Monday 17 September 2026
+              </p>
             </div>
           </div>
 
