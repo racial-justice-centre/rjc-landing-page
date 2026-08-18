@@ -33,11 +33,8 @@ const Hero: React.FC = () => {
             style={{ color: "#ffffff" }}
             className="m-0 break-words font-black tracking-tight !text-white text-3xl leading-9 sm:text-4xl sm:leading-[2.75rem] md:text-5xl md:leading-[3.5rem] lg:text-6xl lg:leading-[4.25rem] xl:text-7xl xl:leading-[5.25rem] 2xl:text-8xl 2xl:leading-[6rem] drop-shadow-[0_2px_12px_rgba(0,0,0,0.75)]"
           >
-            EARLY BIRD TICKETS OUT NOW!
+            TICKETS OUT NOW!
           </h1>
-          <p className="mt-2 text-xs font-semibold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)] sm:mt-3 sm:text-sm md:text-base">
-            Offer ends Monday 17 September 2026
-          </p>
           <Link
             href={TICKETING_URL}
             target="_blank"
