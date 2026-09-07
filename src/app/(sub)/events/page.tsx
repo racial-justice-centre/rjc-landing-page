@@ -10,7 +10,6 @@ import {
   CarouselThumbnails,
 } from "@/components/events/events_carousel";
 import { CONFERENCE_PHOTOS, EVENT_2024, ROUNDTABLE_PHOTOS } from "./data";
-import ConferenceEventDetails from "@/components/temp/ConferenceEventDetails";
 
 const subpageHeroProps: SubpageHeroProps = {
   title: "Our Events",
@@ -22,7 +21,6 @@ const EventPage: React.FC = () => {
   return (
     <>
       <SubpageHero {...subpageHeroProps} />
-      <ConferenceEventDetails />
       <section>
       <div className="w-full">
         <div className="space-y-3 sm:space-y-4 flex flex-col items-center max-w-6xl mx-auto px-4 sm:px-6">
