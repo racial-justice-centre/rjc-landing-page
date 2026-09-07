@@ -47,7 +47,7 @@ const DonateNowModal: React.FC = () => {
 
           <DialogDescription className="mx-auto mt-8 max-w-sm text-center text-sm leading-relaxed text-gray-600 sm:mt-10 sm:text-base">
             Your donation helps us provide free legal support, run community
-            programs, and drive real change against racism in Australia.
+            programs, and drive real change for equality today.
           </DialogDescription>
 
           <div className="mt-6 flex justify-center sm:mt-8">
