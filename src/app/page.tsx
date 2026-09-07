@@ -4,8 +4,7 @@ import Partners from "@/components/Partners";
 import Signup from "@/components/Signup";
 import Donation from "@/components/Donation";
 import DonateNowModal from "@/components/DonateNowModal";
-// Restore later: uncomment to bring the homepage Sudoku grid back
-// import Sudoku from "@/components/Sudoku";
+import Sudoku from "@/components/Sudoku";
 
 const HomePage: React.FC = () => {
 
@@ -15,7 +14,7 @@ const HomePage: React.FC = () => {
       <DonateNowModal />
       <Hero />
       <Container>
-        {/* <Sudoku /> */}
+        <Sudoku />
 
         <Donation />
         <Signup />
