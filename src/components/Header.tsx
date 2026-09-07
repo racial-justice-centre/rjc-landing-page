@@ -7,7 +7,6 @@ import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
 import Image from 'next/image';
 import { menuItems } from '@/data/menuItems';
 import { IoArrowForward } from 'react-icons/io5';
-import ConferenceCountdown from '@/components/temp/ConferenceCountdown';
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -40,19 +39,25 @@ const Header: React.FC = () => {
         <header className="fixed bg-transparent top-0 left-0 right-0 z-50 mx-auto w-full">
             <div className="w-full">
                 <nav className="w-full min-w-0 overflow-x-hidden shadow-md bg-white flex items-center py-2 px-4 md:py-6 md:px-2">
-                    {/* Logo + Conference Countdown — shared square-pill frame */}
-                    <div className="flex flex-shrink-0 items-stretch overflow-hidden rounded-none border-2 border-[#35075B] lg:ml-10">
-                        <Link href="/" className="flex items-center px-3 py-1.5 md:px-4 md:py-2">
-                            <Image priority={false} src="/images/icons/rjc_icon.png" alt="Racial Justice Centre" width={100} height={100} className="h-10 w-auto md:h-12"/>
-                        </Link>
-                        <ConferenceCountdown />
-                    </div>
+                    {/* Logo */}
+                    <Link href="/" className="flex items-center gap-2 flex-shrink-0 lg:ml-10 pr-2 md:pr-2">
+                        <Image priority={false} src="/images/icons/rjc_icon.png" alt="Racial Justice Centre" width={100} height={100} className="h-10 w-auto md:h-12"/>
+                    </Link>
 
-                    {/* Desktop Menu - shown from xl so logo + conference box always fit */}
-                    <ul className="hidden xl:flex xl:space-x-6 2xl:space-x-10 flex-1 justify-end mr-2 xl:mr-10">
+                    {/* Always-visible Donate Now reminder, next to the logo */}
+                    <Link
+                        href="/#cta"
+                        onClick={scrollToDonation}
+                        className="flex-shrink-0 mr-2 whitespace-nowrap bg-[#35075B] px-2.5 py-1.5 text-[10px] font-semibold uppercase tracking-wide text-white shadow-lg shadow-black/20 transition-colors hover:bg-[#4A0D75] md:px-3 md:py-2 md:text-xs lg:text-sm"
+                    >
+                        Donate Now
+                    </Link>
+
+                    {/* Desktop Menu */}
+                    <ul className="hidden lg:flex lg:space-x-6 xl:space-x-10 flex-1 justify-end mr-2 lg:mr-4 xl:mr-10">
                         {menuItems.map(item => (
                             <li key={item.text}>
-                                <Link href={item.url} className="text-foreground hover:text-foreground-accent transition-colors font-medium whitespace-nowrap text-base 2xl:text-lg">
+                                <Link href={item.url} className="text-foreground hover:text-foreground-accent transition-colors font-medium whitespace-nowrap text-sm lg:text-base xl:text-lg">
                                     {item.text}
                                 </Link>
                             </li>
@@ -60,14 +65,14 @@ const Header: React.FC = () => {
                     </ul>
 
                     {/* Desktop CTA Button */}
-                    <div className="hidden xl:block flex-shrink-0 mr-2 xl:mr-5">
-                        <Link href="/#cta" onClick={scrollToDonation} className="font-semibold text-white bg-black hover:bg-primary-accent px-4 xl:px-6 2xl:px-8 py-2 xl:py-2.5 2xl:py-3 transition-colors flex items-center gap-2 text-sm 2xl:text-base whitespace-nowrap">
-                            Donate <IoArrowForward className="w-3 h-3 xl:w-4 xl:h-4" />
+                    <div className="hidden lg:block flex-shrink-0 mr-2 lg:mr-5">
+                        <Link href="/#cta" onClick={scrollToDonation} className="font-semibold text-white bg-black hover:bg-primary-accent px-4 lg:px-6 xl:px-8 py-2 lg:py-2.5 xl:py-3 transition-colors flex items-center gap-2 text-sm xl:text-base whitespace-nowrap">
+                            Donate <IoArrowForward className="w-3 h-3 lg:w-4 lg:h-4" />
                         </Link>
                     </div>
 
-                    {/* Menu button — used below xl when nav links are collapsed */}
-                    <div className="xl:hidden flex items-center ml-auto">
+                    {/* Menu button — used below lg when nav links are collapsed */}
+                    <div className="lg:hidden flex items-center ml-auto">
                         <button
                             onClick={toggleMenu}
                             type="button"
@@ -98,7 +103,7 @@ const Header: React.FC = () => {
                     leaveTo="opacity-0"
                 >
                     <div 
-                        className="fixed inset-0 bg-black bg-opacity-25 xl:hidden z-40"
+                        className="fixed inset-0 bg-black bg-opacity-25 lg:hidden z-40"
                         onClick={toggleMenu}
                     />
                 </Transition.Child>
@@ -112,7 +117,7 @@ const Header: React.FC = () => {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 -translate-y-2"
                 >
-                    <div id="mobile-menu" className="xl:hidden bg-white shadow-xl border-t border-gray-100 relative z-50">
+                    <div id="mobile-menu" className="lg:hidden bg-white shadow-xl border-t border-gray-100 relative z-50">
                         <div className="px-4 py-6 space-y-1">
                             {menuItems.map(item => (
                                 <Link
